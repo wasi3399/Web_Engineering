@@ -1,0 +1,176 @@
+/* ওয়েবসাইটের সাধারণ সেটিং */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* নতুন প্রফেশনাল ফন্ট */
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* ন্যাভিগেশন বারের ডিজাইন */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 400;
+}
+
+nav ul li a:hover {
+    color: #ffde00; /* হোভার করলে হলুদ রঙ হবে */
+}
+
+/* হিরো সেকশনের ডিজাইন (ছবি ও ইন্ট্রো) */
+.hero {
+    text-align: center;
+    padding: 5rem 20px;
+    background: linear-gradient(135deg, #007bff, #00c6ff); /* মডার্ন গ্রেডিয়েন্ট কালার */
+    color: white;
+}
+/* হিরো সেকশনের ডেসক্রিপশন সুন্দর করার জন্য */
+.hero p {
+    max-width: 700px; /* লেখাটিকে নির্দিষ্ট চওড়ার মধ্যে রাখবে */
+    margin: 15px auto 0; /* লেখাটিকে একদম মাঝখানে আনবে এবং উপরে একটু ফাঁকা রাখবে */
+    font-size: 1.1rem; /* লেখাটি একটু বড় ও স্পষ্ট করবে */
+    line-height: 1.6;
+}
+
+.profile-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%; /* ছবি গোল করার জন্য */
+    border: 4px solid white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    margin-bottom: 15px;
+    object-fit: cover; /* ছবি যেন চ্যাপ্টা না হয়ে যায় */
+}
+
+.highlight {
+    color: #ffde00; /* নামের কালার হাইলাইট */
+}
+
+/* স্কিলস সেকশনের ডিজাইন */
+.skills-section {
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: left;
+    padding: 0 20px;
+}
+
+.skills-section h2 {
+    text-align: center;
+}
+
+.skill-tags {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.skill-tags span {
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.skill-tags span:hover {
+    transform: scale(1.1); /* মাউস নিলে স্কিল ট্যাগগুলো একটু বড় হবে */
+}
+
+#projects {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: left; 
+}
+
+#projects h2 {
+    text-align: center;
+    margin-bottom: 20px; /* হেডিং এবং কার্ডের মাঝখানে একটু ফাঁকা জায়গা রাখার জন্য */
+}
+.project-card {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* কার্ডের অ্যানিমেশন */
+    text-align:left;
+}
+
+/* হোভার করলে প্রজেক্ট কার্ড ভেসে উঠবে */
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* ফুটার বা একদম নিচের অংশের ডিজাইন */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    margin-top: 40px;
+}
+/* এডুকেশন সেকশনের ডিজাইন */
+#education {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: left;
+}
+
+#education h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* কন্টাক্ট সেকশনের ইমেইল লিংক হাইলাইট করার ডিজাইন */
+.email-link {
+    color: #ffde00; /* হলুদ রঙ দেওয়া হলো যাতে ডার্ক ব্যাকগ্রাউন্ডে ফুটে ওঠে */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.email-link:hover {
+    color: #00c6ff; /* মাউস নিলে রঙ পরিবর্তন হয়ে হালকা নীল হবে */
+    text-decoration: underline; /* মাউস নিলে নিচে দাগ আসবে */
+}
